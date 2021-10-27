@@ -19,7 +19,7 @@ app.get('/api/notes', (req, res) => {
     res.json(parsed)
   })
 })
-app.post('/api/notes', (req) => {
+app.post('/api/notes', (req,res) => {
   const { title, text } = req.body
   const newNote = {
     title,
